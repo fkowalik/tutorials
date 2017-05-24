@@ -27,7 +27,6 @@ public class IntegerWrapper implements Comparable {
             return 1;
     }
 
-    //TODO implementacja hashcode
     @Override
     public int hashCode() {
         final int prime = 31;

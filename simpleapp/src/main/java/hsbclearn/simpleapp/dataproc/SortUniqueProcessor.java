@@ -9,7 +9,7 @@ import java.util.TreeSet;
 /**
  * Created by FIKOWALI on 2017-05-17.
  */
-public class DataProcessorIntWrap implements DataProcessor {
+public class SortUniqueProcessor implements DataProcessor {
 
     public List<IntegerWrapper> processData(List<IntegerWrapper> unprocessedList) {
         TreeSet<IntegerWrapper> list = new TreeSet<IntegerWrapper>(unprocessedList);

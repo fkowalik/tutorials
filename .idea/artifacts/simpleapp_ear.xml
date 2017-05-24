@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="ear" build-on-make="true" name="simpleapp:ear">
+    <output-path>$PROJECT_DIR$/simpleapp/target</output-path>
+    <root id="archive" name="simpleapp.ear">
+      <element id="artifact" artifact-name="simpleapp:war" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/simpleapp/target/simpleapp/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

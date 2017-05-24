@@ -1,23 +1,22 @@
 package hsbclearn.simpleapp;
 
-import hsbclearn.simpleapp.dataproc.DataInputIntWrap;
-import hsbclearn.simpleapp.dataproc.DataProcessorIntWrap;
-import hsbclearn.simpleapp.dataproc.DataOutputIntWrap;
+import hsbclearn.simpleapp.dataproc.ConsoleInput;
+import hsbclearn.simpleapp.dataproc.SortUniqueProcessor;
+import hsbclearn.simpleapp.dataproc.ConsoleOutput;
 import hsbclearn.simpleapp.datatype.IntegerWrapper;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeSet;
 
 public class App {
 
     public static void main(String[] args) {
-        DataInputIntWrap data = new DataInputIntWrap();
+        ConsoleInput data = new ConsoleInput();
         ArrayList<IntegerWrapper> dataIn = data.getData();
-        DataProcessorIntWrap dataProc = new DataProcessorIntWrap();
+        SortUniqueProcessor dataProc = new SortUniqueProcessor();
         //TreeSet<IntegerWrapper> dataOut = dataProc.processData(dataIn);
         List<IntegerWrapper> dataOut = dataProc.processData(dataIn);
-        DataOutputIntWrap dataPut = new DataOutputIntWrap();
+        ConsoleOutput dataPut = new ConsoleOutput();
 
         System.out.println( "Initial list: " + dataIn );
         dataPut.putData(dataOut);

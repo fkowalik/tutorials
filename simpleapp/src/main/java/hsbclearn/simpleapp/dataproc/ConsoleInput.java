@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * Created by FIKOWALI on 2017-05-17.
  */
-public class DataInputIntWrap implements DataInput {
+public class ConsoleInput implements DataInput {
 
     public ArrayList<IntegerWrapper> getData() {
         ArrayList<IntegerWrapper> list = new ArrayList<IntegerWrapper>();
